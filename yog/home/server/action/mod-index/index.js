@@ -2,17 +2,21 @@
  * @des: 首页相关接口
  */
 
-var Index = require('../../model/index');
+var INTERFACE = require('../../interface')();
 module.exports = function(req, res){
 
 };
 
 module.exports.get = function(req, res, next){
-	var param = req.params;
-	Index.get(param).then(function(data){
+	yog.ralPromise('SITEAPI', {
+		query: req.params,
+		method: 'POST',
+		path: INTERFACE._getHomePageChannel
+	}).then(function(data){
 		res.render(data);
-	},function(err){
-
+	}).catch(function(error){
+		error.qq = req.server;
+		res.json(error);
 	});
 };
 

@@ -1,3 +1,0 @@
-jquery版本:jquery-1.11.3.min.js
-swiper插件:swiper3.08.jquery.min.js
-juicer版本:juicer.js

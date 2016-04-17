@@ -1,5 +1,5 @@
 
-module.exports.API= {           // 声明服务名为MAPAPI
+module.exports.SITEAPI= {           // 声明服务名为MAPAPI
     // 请求协议与数据格式配置
     protocol: 'http',              // 使用http协议请求
     pack: 'querystring',           // 数据封装为query
@@ -23,10 +23,9 @@ module.exports.API= {           // 声明服务名为MAPAPI
     //     'x-client': 'ral'
     // },
     // 后端地址配置
-    server: [                      // 可以配置多个后端地址
-        {
-            host: 'api3.bajinshe.com',
-            port: 80
-        }
-    ]
+    // 可以配置多个后端地址
+    server: [{
+        host: 'api3.bajinshe.com',
+        port: 80
+    }]
 }
