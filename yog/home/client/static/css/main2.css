@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-04-12 10:36:24
+ * @version $Id$
+ */
+/* 公共  */
+body{
+	margin: 0;
+	font-family: "微软雅黑";
+}
+.wraper{
+	width: 100%;
+}
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/* header */
+.header{
+	height: 44px;
+	background: #2d313d;
+}
+.header .head{
+	line-height: 44px;
+}
+.header .head .left{
+	width: 500px;
+}
+.header .head .right{
+	width: 500px;
+}
+.head p{
+	color: #cccfd8;
+	font-size: 13px;
+}
+.head .left p,.head .left div{
+	float: left;
+	margin: 0 20px 0 0;
+}
+.head .left .weiboDiv{
+	width: 20px;
+	margin-top: 7px;
+}
+
+.head .left .weiboDiv:hover{
+
+}
+
+
+.head .left .weChatDiv{
+	width: 20px;
+	margin-top: 7px;
+}
+.head .left .weChatDiv:hover{
+
+}
+
+.head .right p{
+	float: right;
+	margin: 0 0 0 20px;
+	cursor: pointer;
+}
+.head .right p:hover{
+	color: #fff;
+}
+
+.left .weiboDiv .weibo{
+	width: 20px;
+	height: 20px;
+	background: url(../img/weibo.png) no-repeat 0 0;
+	background-size: 20px;
+	border: none;
+}
+
+.left .weiboDiv .weiboErWeiMa{
+	margin-left: -45px;
+}
+.left .weChatDiv .weChat{
+	width: 20px;
+	height: 20px;
+	background: url(../img/weChat.png) no-repeat 0 0;
+	background-size: 20px;
+	border: none;
+}
+.left .weChatDiv .weChatErWeiMa{
+	margin-left: -45px;
+}

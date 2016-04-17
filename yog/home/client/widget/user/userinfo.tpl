@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<td>ID</td>
+		<td>{{user.id}}</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>{{user.name}}</td>
+	</tr>
+	<tr>
+		<td>sex</td>
+		<td>{{user.sex}}</td>
+	</tr>
+</table>

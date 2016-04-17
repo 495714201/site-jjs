@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-04-12 10:36:24
+ * @version $Id$
+ */
+/* 公共  */
+body{
+	margin: 0;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+ul,p{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+.wraper{
+	width: 100%;
+	min-width: 1000px;
+}
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+/* header */
+.header{
+	height: 115px;
+	background: #2d313d;
+}
+.header .head{
+    height: 44px;
+	line-height: 44px;
+}
+.header .head .left{
+	width: 500px;
+}
+.head p{
+	color: #cccfd8;
+	font-size: 13px;
+}
+.head .left p,.head .left div{
+	float: left;
+	margin: 0 20px 0 0;
+}
+.head .left .weiboDiv{
+    position: relative;
+    width: 24px;
+    margin: 10px 10px 0 0;
+}
+.left .weiboDiv .weibo{
+	width: 24px;
+	height: 24px;
+	background: url(../img/weibo.png) no-repeat 0 0;
+	background-size: 24px;
+}
+.left .weiboDiv:hover .weibo{
+	background: url(../img/weiboH.png) no-repeat 0 0;
+	background-size: 24px;
+}
+.left .weiboDiv .weiboErWeiMa{
+	display: none;
+    position: absolute;
+    z-index: 10;
+	margin: 40px 0 0 -45px;
+}
+.left .weiboDiv:hover .weiboErWeiMa{
+	display: block;
+}
+
+.head .left .weChatDiv{
+    position: relative;
+	width: 24px;
+	margin-top: 10px;
+}
+.left .weChatDiv .weChat{
+	width: 24px;
+	height: 24px;
+	background: url(../img/weChat.png) no-repeat 0 0;
+	background-size: 24px;
+	border: none;
+}
+.left .weChatDiv:hover .weChat{
+	background: url(../img/weChatH.png) no-repeat 0 0;
+	background-size: 24px;
+}
+.left .weChatDiv .weChatErWeiMa{
+	display: none;
+    position: absolute;
+    z-index: 10;
+	margin: 40px 0 0 -45px;
+}
+.left .weChatDiv:hover .weChatErWeiMa{
+	display: block;
+}
+
+.header .head .right{
+	width: 500px;
+}
+.head .right p{
+	float: right;
+	margin: 0 0 0 20px;
+	cursor: pointer;
+}
+.head .right p:hover{
+	color: #fff;
+}
+/* header2 */
+.header2{
+	height: 70px;
+	background: #fff;
+	border-bottom: 1px solid #dedede;
+}
+.header .left a{ 
+	display: block;
+	margin-top: 22px;
+}
+.header .right a{ 
+    float: right;
+    margin-left: 10px;
+    padding: 0 10px;
+    color: #505a78;
+    font-weight: bold;
+    line-height: 67px;
+}
+.header .right a:hover{ 
+	color: #ff6251;
+	border-bottom: 4px solid #ff6251;
+}
+.header .right a.active{ 
+	color: #ff6251;
+	border-bottom: 4px solid #ff6251;
+}
+
+/* wraper1*/
+/* banner 插件css */
+.wraper1{
+	position: relative;
+	overflow: hidden;
+}
+.banner{
+	height: 320px;
+	position: relative;
+}
+.banner ul{
+	height: 320px;
+
+}
+.banner ul li{
+	width: 100%;
+	height: 320px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 1.5s;
+	-webkit-transition: opacity 1.5s;
+	-o-transition: opacity 1.5s;
+	-moz-transition: opacity 1.5s;
+}
+.banner ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: 1800px 320px;
+}
+.banner .dot{
+    position: absolute;
+    z-index: 3;
+    left: 30%;
+    bottom: 25px;
+}
+.banner .dot span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #808588;
+    border-radius: 5px;
+    margin-right: 6px;
+}
+.banner .dot span.active{
+    background: #474d4d;
+}
+.banner .left,.banner .right{
+	display: block;
+    width: 33px;
+    height: 46px;
+    position: absolute;
+    top: 139px;
+    z-index: 3;
+    cursor: pointer;
+}
+.banner .left{
+    left: 50%;
+    margin-left: -550px;
+    background: url(../img/left.png) no-repeat 0 0;
+}
+.banner .right{
+    right: 50%;
+    margin-right: -550px;
+    background: url(../img/right.png) no-repeat 0 0;
+}
+.wraper1 .wrap2{
+    width: 300px;
+    height: 232px;
+    position: absolute;
+    right: 50%;
+    top: 48px;
+    z-index: 5;
+    margin-right: -500px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.wraper1 .wrap2 .welcome1{
+	
+}
+.wraper1 .wrap2 .welcome1 p, .wraper1 .wrap2 .welcome2 p{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;	
+	color: #515a77;
+
+}
+.wraper1 .wrap2 .welcome1 .p1{
+	margin: 28px auto 16px;
+	font-size: 17px;
+}
+.wraper1 .wrap2 .welcome1 .p1 .hong{
+	color: #fc5f4e;
+	font-size: 28px;
+	font-weight: bold;
+}
+.wraper1 .wrap2 .welcome1 .p2{
+	font-size: 17px;
+}
+.wraper1 .wrap2 .welcome1 .p3 a{
+    display: block;
+    width: 190px;
+    height: 44px;
+    margin: 29px auto 12px;
+    background-color: #fc614d;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 44px;
+}
+.wraper1 .wrap2 .welcome1 .p4{
+	font-size: 14px;
+}
+.wraper1 .wrap2 .welcome1 .p4 a{
+    text-decoration: underline;
+    color: #515a77;
+}
+
+.wraper1 .wrap2 .welcome2{
+	
+}
+.wraper1 .wrap2 .welcome2 p{
+	width: 100%;
+}
+.wraper1 .wrap2 .welcome2 .p11{
+    margin: 28px auto 26px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wraper1 .wrap2 .welcome2 .p12{
+    font-size: 16px;
+    margin: 6px auto;
+}
+.wraper1 .wrap2 .welcome2 .p12 .hong{
+    color: #fc5f4e;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 18px;
+}
+.wraper1 .wrap2 .welcome2 .p13 a{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 44px;
+    margin-top: 26px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 44px;
+}
+.wraper1 .wrap2 .welcome2 .p13 .a1{
+    background-color: #fc614d;
+}
+.wraper1 .wrap2 .welcome2 .p13 .a2{
+    background-color: #ff7e69;
+}
+.wraper2{
+	height: 130px;
+	background: #fff;
+}
+.wraper2 .wrap{
+	height: 130px;
+}
+.wraper2 a{
+    display: block;
+    float: left;
+    width: 196px;
+    margin: 40px 70px 0 0;
+}
+.wraper2 a.a4{
+	margin-right: 0;
+}
+.wraper2 a img{
+    float: left;
+}
+.wraper2 a span{
+    display: block;
+    padding-left: 70px;
+    color: #505a78;
+}
+.wraper2 a .span1{
+    margin: 6px 0 4px 0;
+    font-size: 14px;
+}
+.wraper2 a .span2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.wrapper3{
+	height: 383px;
+	background: #f3f4f8;
+}
+.wrapper3 .title{
+    width: 995px;
+    margin: 30px auto;
+	padding-left: 10px;
+    border-left: 5px solid #ff7761;
+    font-weight: bold;
+}
+.wrapper3 .title span{
+	margin-left: 10px;
+	color: #ff7761;
+	font-size: 16px;
+	font-weight: normal;
+}
+.wrapper3 .title .more{
+	float: right;
+	color: #807f7f;
+	font-weight: normal;
+
+}
+.wrapper3 ul{
+	
+}
+.wrapper3 ul li{
+
+}
+.wrapper3 ul li.last{
+
+}
